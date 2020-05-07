@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_overview">Prehľad</string>
+    <string name="title_water">Voda</string>
+    <string name="title_temperature">Teplo</string>
+    <string name="title_lighting">Osvetlenie</string>
+    <string name="title_entrance">Vstup</string>
+    <string name="title_activity_login">Prihlásenie</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Heslo</string>
+    <string name="action_sign_in">Prihlásenie alebo registrácia</string>
+    <string name="action_sign_in_short">Prihlásiť sa</string>
+    <string name="welcome">Vitajte !</string>
+    <string name="invalid_password">Heslo musí byť väčšie ako 5 znakov</string>
+    <string name="login_failed">Prihlásenie neúspešné</string>
+    <string name="invalid_username">Nevalidné používateľské meno</string>
+    <string name="action_send_msg">Poslať správu</string>
+    <string name="caption_controller_name">Správa domácnosti:</string>
+    <string name="caption_light_control">Osvetlenie</string>
+    <string name="caption_blinds_control">Žalúzie</string>
+    <string name="title_settings">Nastavenia</string>
+    <string name="title_about">Informácie o verzii</string>
+    <string name="title_activity_settings">Nastavenia</string>
+</resources>

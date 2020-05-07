@@ -1,4 +1,4 @@
-package ga.inho.inho.client.ui.notifications;
+package ga.inho.inho.client.ui.temperature;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import ga.inho.inho.client.R;
 
-public class NotificationsFragment extends Fragment {
+public class TemperatureFragment extends Fragment {
 
-    private NotificationsViewModel notificationsViewModel;
+    private TemperatureViewModel temperatureViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        notificationsViewModel =
-                ViewModelProviders.of(this).get(NotificationsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
-        final TextView textView = root.findViewById(R.id.text_notifications);
-        notificationsViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        temperatureViewModel =
+                ViewModelProviders.of(this).get(TemperatureViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_temperature, container, false);
+        final TextView textView = root.findViewById(R.id.text_temperature);
+        temperatureViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

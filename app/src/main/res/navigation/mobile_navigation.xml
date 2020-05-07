@@ -3,23 +3,35 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@id/navigation_overview">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/navigation_overview"
         android:name="ga.inho.inho.client.ui.home.HomeFragment"
-        android:label="@string/title_home"
+        android:label="@string/title_overview"
         tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/navigation_dashboard"
-        android:name="ga.inho.inho.client.ui.dashboard.DashboardFragment"
-        android:label="@string/title_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:id="@+id/navigation_water"
+        android:name="ga.inho.inho.client.ui.water.WaterFragment"
+        android:label="@string/title_water"
+        tools:layout="@layout/fragment_water" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
-        android:name="ga.inho.inho.client.ui.notifications.NotificationsFragment"
-        android:label="@string/title_notifications"
-        tools:layout="@layout/fragment_notifications" />
+        android:id="@+id/navigation_temperature"
+        android:name="ga.inho.inho.client.ui.temperature.TemperatureFragment"
+        android:label="@string/title_temperature"
+        tools:layout="@layout/fragment_temperature" />
+
+    <fragment
+        android:id="@+id/navigation_lighting"
+        android:name="ga.inho.inho.client.ui.light.LightFragment"
+        android:label="@string/title_lighting"
+        tools:layout="@layout/fragment_lighting" />
+
+    <fragment
+        android:id="@+id/navigation_entrance"
+        android:name="ga.inho.inho.client.ui.entrance.EntranceFragment"
+        android:label="@string/title_entrance"
+        tools:layout="@layout/fragment_entrance" />
 </navigation>
